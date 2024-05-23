@@ -10,9 +10,8 @@ import AuthenticationServices
 
 struct LoginView: View {
     
-    @State private var email: String = ""
-    @State private var password: String = ""
     @State private var isSignup: Bool = false
+    @StateObject private var viewModel = LoginViewModel()
     
     var body: some View {
         VStack {
@@ -27,12 +26,17 @@ struct LoginView: View {
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .padding(.bottom,20)
                 
-                TKTextField(text: $email, placeholder: "Email", image: "envelope")
+                if !viewModel.errorMessage.isEmpty {
+                    Text(viewModel.errorMessage)
+                        .foregroundStyle(.red)
+                }
                 
-                TKTextField(text: $password, placeholder: "Password", image: "lock", isSecure: true)
+                TKTextField(text: $viewModel.email, placeholder: "Email", image: "envelope")
+                
+                TKTextField(text: $viewModel.password, placeholder: "Password", image: "lock", isSecure: true)
                 
                 TKButton(label: "Login") {
-                    
+                    viewModel.login()
                 }
             }
             .padding()
