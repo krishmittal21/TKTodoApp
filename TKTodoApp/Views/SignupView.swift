@@ -9,10 +9,7 @@ import SwiftUI
 
 struct SignupView: View {
     
-    @State private var email: String = ""
-    @State private var name: String = ""
-    @State private var password: String = ""
-    @State private var confirmPassword: String = ""
+    @StateObject private var viewModel = SignupViewModel()
     
     var body: some View {
         VStack(spacing: 10) {
@@ -25,16 +22,16 @@ struct SignupView: View {
             .padding()
             
             VStack {
-                TKTextField(text: $name, placeholder: "Name", image: "person")
+                TKTextField(text: $viewModel.name, placeholder: "Name", image: "person")
                 
-                TKTextField(text: $email, placeholder: "Email", image: "envelope")
+                TKTextField(text: $viewModel.email, placeholder: "Email", image: "envelope")
                 
-                TKTextField(text: $password, placeholder: "Password", image: "lock", isSecure: true)
+                TKTextField(text: $viewModel.password, placeholder: "Password", image: "lock", isSecure: true)
                 
-                TKTextField(text: $confirmPassword, placeholder: "Confirm Password", image: "lock", isSecure: true)
+                TKTextField(text: $viewModel.confirmPassword, placeholder: "Confirm Password", image: "lock", isSecure: true)
                 
                 TKButton(label: "Signup") {
-                    
+                    viewModel.register()
                 }
             }
             .padding()
