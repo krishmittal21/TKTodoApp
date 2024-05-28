@@ -21,6 +21,7 @@
 		CC67E1A92C01E360003220B7 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC67E1A82C01E360003220B7 /* ColorExtension.swift */; };
 		CC67E1AB2C01E423003220B7 /* CalanderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC67E1AA2C01E423003220B7 /* CalanderView.swift */; };
 		CC67E1AD2C01E42E003220B7 /* ToDoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC67E1AC2C01E42E003220B7 /* ToDoView.swift */; };
+		CC6B6E8D2C05D10F008A5F09 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6B6E8C2C05D10F008A5F09 /* ProfileViewModel.swift */; };
 		CC7DFF752C0093B800765CF3 /* SignupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7DFF742C0093B800765CF3 /* SignupViewModel.swift */; };
 		CC7DFF772C0095CA00765CF3 /* TKUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7DFF762C0095CA00765CF3 /* TKUser.swift */; };
 		CC7DFF7A2C00976D00765CF3 /* EncodableExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7DFF792C00976D00765CF3 /* EncodableExtension.swift */; };
@@ -43,6 +44,7 @@
 		CC67E1A82C01E360003220B7 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		CC67E1AA2C01E423003220B7 /* CalanderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalanderView.swift; sourceTree = "<group>"; };
 		CC67E1AC2C01E42E003220B7 /* ToDoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoView.swift; sourceTree = "<group>"; };
+		CC6B6E8C2C05D10F008A5F09 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		CC7DFF742C0093B800765CF3 /* SignupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewModel.swift; sourceTree = "<group>"; };
 		CC7DFF762C0095CA00765CF3 /* TKUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TKUser.swift; sourceTree = "<group>"; };
 		CC7DFF792C00976D00765CF3 /* EncodableExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncodableExtension.swift; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 				CCE9D54D2BFF374F005ADF36 /* LoginViewModel.swift */,
 				CC7DFF742C0093B800765CF3 /* SignupViewModel.swift */,
 				CC7DFF7B2C00990B00765CF3 /* MainViewModel.swift */,
+				CC6B6E8C2C05D10F008A5F09 /* ProfileViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -256,6 +259,7 @@
 				CCE9D54E2BFF374F005ADF36 /* LoginViewModel.swift in Sources */,
 				CC7DFF772C0095CA00765CF3 /* TKUser.swift in Sources */,
 				CC7DFF7C2C00990B00765CF3 /* MainViewModel.swift in Sources */,
+				CC6B6E8D2C05D10F008A5F09 /* ProfileViewModel.swift in Sources */,
 				CC67E1A92C01E360003220B7 /* ColorExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
