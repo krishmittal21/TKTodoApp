@@ -10,6 +10,9 @@
 		CC22720C2BFC8958004D2EF1 /* TKButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC22720B2BFC8958004D2EF1 /* TKButton.swift */; };
 		CC22720E2BFC939E004D2EF1 /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC22720D2BFC939E004D2EF1 /* SignupView.swift */; };
 		CC2272102BFC9499004D2EF1 /* TKTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC22720F2BFC9499004D2EF1 /* TKTextField.swift */; };
+		CC330E822C09C58F00F236FF /* TKTodo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC330E812C09C58F00F236FF /* TKTodo.swift */; };
+		CC330E842C09C60600F236FF /* ToDoItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC330E832C09C60600F236FF /* ToDoItemView.swift */; };
+		CC330E862C09C61000F236FF /* ToDoItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC330E852C09C61000F236FF /* ToDoItemViewModel.swift */; };
 		CC57B44B2BFB545B00EF9956 /* TKTodoAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC57B44A2BFB545B00EF9956 /* TKTodoAppApp.swift */; };
 		CC57B44D2BFB545B00EF9956 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC57B44C2BFB545B00EF9956 /* MainView.swift */; };
 		CC57B44F2BFB545D00EF9956 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC57B44E2BFB545D00EF9956 /* Assets.xcassets */; };
@@ -35,6 +38,9 @@
 		CC22720B2BFC8958004D2EF1 /* TKButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TKButton.swift; sourceTree = "<group>"; };
 		CC22720D2BFC939E004D2EF1 /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
 		CC22720F2BFC9499004D2EF1 /* TKTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TKTextField.swift; sourceTree = "<group>"; };
+		CC330E812C09C58F00F236FF /* TKTodo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TKTodo.swift; sourceTree = "<group>"; };
+		CC330E832C09C60600F236FF /* ToDoItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItemView.swift; sourceTree = "<group>"; };
+		CC330E852C09C61000F236FF /* ToDoItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItemViewModel.swift; sourceTree = "<group>"; };
 		CC57B4472BFB545B00EF9956 /* TKTodoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TKTodoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC57B44A2BFB545B00EF9956 /* TKTodoAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TKTodoAppApp.swift; sourceTree = "<group>"; };
 		CC57B44C2BFB545B00EF9956 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -124,6 +130,7 @@
 				CC7DFF7D2C009AC900765CF3 /* ProfileView.swift */,
 				CC67E1AA2C01E423003220B7 /* CalanderView.swift */,
 				CC67E1AC2C01E42E003220B7 /* ToDoView.swift */,
+				CC330E832C09C60600F236FF /* ToDoItemView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -135,6 +142,7 @@
 				CC7DFF742C0093B800765CF3 /* SignupViewModel.swift */,
 				CC7DFF7B2C00990B00765CF3 /* MainViewModel.swift */,
 				CC6B6E8C2C05D10F008A5F09 /* ProfileViewModel.swift */,
+				CC330E852C09C61000F236FF /* ToDoItemViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -143,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				CC7DFF762C0095CA00765CF3 /* TKUser.swift */,
+				CC330E812C09C58F00F236FF /* TKTodo.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -246,11 +255,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC2272102BFC9499004D2EF1 /* TKTextField.swift in Sources */,
+				CC330E842C09C60600F236FF /* ToDoItemView.swift in Sources */,
 				CC22720C2BFC8958004D2EF1 /* TKButton.swift in Sources */,
 				CC7DFF752C0093B800765CF3 /* SignupViewModel.swift in Sources */,
 				CC7DFF7A2C00976D00765CF3 /* EncodableExtension.swift in Sources */,
 				CC67E1AD2C01E42E003220B7 /* ToDoView.swift in Sources */,
 				CC7DFF7E2C009AC900765CF3 /* ProfileView.swift in Sources */,
+				CC330E822C09C58F00F236FF /* TKTodo.swift in Sources */,
+				CC330E862C09C61000F236FF /* ToDoItemViewModel.swift in Sources */,
 				CCC7DA942BFC6FC300BDA63D /* LoginView.swift in Sources */,
 				CC57B44D2BFB545B00EF9956 /* MainView.swift in Sources */,
 				CC57B44B2BFB545B00EF9956 /* TKTodoAppApp.swift in Sources */,
